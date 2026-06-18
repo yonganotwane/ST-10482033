@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bookings - BLK Master Tower Garages</title>
+<nav class="navbar">
+    <a href="index.html" class="logo">BLK MASTER TOWER GARAGES</a>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="booking.html">Bookings</a></li>
+        <li><a href="contact.html">Contact</a></li>
+         <link rel="stylesheet" href="css/Styles.css">
+    </ul>
+</nav>
+
+</head>
+
+<body>
+
+<h1>Book a Service</h1>
+
+<form>
+
+    <h3>Customer Details</h3>
+    <input type="text" placeholder="Full Name" required>
+    <input type="tel" placeholder="Phone Number" required>
+
+    <h3>Select Service</h3>
+    <select id="service">
+        <option>Engine Repair</option>
+        <option>Brake Service</option>
+        <option>Oil Change</option>
+        <option>Towing</option>
+    </select>
+
+    <h3>Vehicle Condition</h3>
+    <input type="radio" name="condition" value="movable" checked> I can bring my car<br>
+    <input type="radio" name="condition" value="immobile"> Car cannot move<br>
+    <input type="radio" name="condition" value="towing"> Need towing<br><br>
+
+    <h3>Distance (KM)</h3>
+    <input type="number" id="distance" placeholder="Enter distance">
+
+    <h3>Available Time Slots</h3>
+    <select>
+        <option>09:00</option>
+        <option>11:00</option>
+        <option>13:00</option>
+        <option>15:00</option>
+    </select>
+
+    <button type="button" onclick="calculate()">Submit Booking</button>
+
+</form>
+
+<p id="output"></p>
+
+<script src="java/script.js"></script>
+ <link rel="stylesheet" href="css/Styles.css">
+<a href="index.html">Back</a>
+
+</body>
+</html>
